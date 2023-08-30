@@ -1,0 +1,16 @@
+body {
+  background-image: url('Background-Image.jpg');
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.intro {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
