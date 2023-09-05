@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="stylesheet.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
 <html>
+  <script>
+    function myFunction() {
+      document.getElementById('myDropdown').classList.toggle('show')
+    }
+  </script>
+
   <head>
     <title>My Blog</title>
   </head>
   <body>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
+
+      <div id="myDropdown" class="dropdown-content">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> About Me</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i> Blogs</a>
+      </div>
+    </div>
     <h1>Hello World</h1>
     <div class="intro">
       <p>This is the start of my website home page :)</p>
       <p>This will eventually turn into homepage for all my blog posts</p>
     </div>
+
+    <script>
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName('menu-content')
+          var i
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i]
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show')
+            }
+          }
+        }
+      }
+    </script>
   </body>
 </html>
