@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="stylesheet.css" />
+<link
+  rel="stylesheet"
+  href="\\wsl.localhost\Ubuntu\home\logan\logan-bruce01.github.io\styles\stylesheet.css"
+/>
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
 
 <html>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script>
     function myFunction() {
       document.getElementById('myDropdown').classList.toggle('show')
@@ -13,7 +18,7 @@
   </script>
 
   <head>
-    <title>My Blog</title>
+    <title>About Me</title>
   </head>
   <body>
     <div class="dropdown">
@@ -24,15 +29,34 @@
       </button>
 
       <div id="myDropdown" class="dropdown-content">
-        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="#"><i class="fa fa-fw fa-user"></i> About Me</a>
-        <a href="#"><i class="fa fa-fw fa-search"></i> Blogs</a>
+        <a class="active" href="index.html"
+          ><i class="fa fa-fw fa-home"></i> Home</a
+        >
+        <a href="blogs.html"><i class="fa fa-fw fa-search"></i> Blogs</a>
       </div>
     </div>
-    <h1>Hello World</h1>
+
     <div class="intro">
-      <p>This is the start of my website home page :)</p>
-      <p>This will eventually turn into homepage for all my blog posts</p>
+      <div class="about-img">
+        <img src="images/About.jpg" alt="About Img" />
+      </div>
+      <h1>About Me</h1>
+
+      <p>Hey everyone, My names Logan and welcome to my website :)</p>
+      <p>
+        A little bit about me, I love skiing and everything to do with
+        motorbikes, I also really enjoy website development and tech related
+        things. I am currently attending Dev Academy to upgrade my skillset on
+        website development and I am really excited for this journey
+      </p>
+
+      <p>
+        If you want to see some more of my work please either navigate to the
+        three lines in the top right or
+      </p>
+      <button class="click-me">
+        <a href="blogs.html">Click Me</a>
+      </button>
     </div>
 
     <script>

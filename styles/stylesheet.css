@@ -1,0 +1,183 @@
+body {
+  /* background-image: url('Background-Image.jpg');
+  /* background-size: 100vw, 100vh; */
+  background-color: #393e41;
+  color: #f7ebec;
+}
+
+h1 {
+  color: #f7ebec;
+  text-align: center;
+  font-weight: bold;
+}
+
+.about-img img {
+  box-sizing: border-box;
+  position: center;
+  height: 30%;
+  width: 30%;
+}
+
+.intro {
+  color: #f7ebec;
+  text-align: center;
+  font-size: 25px;
+}
+
+.click-me {
+  font-size: 12px;
+  color: #393e41;
+  background-color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 13px;
+  font-size: 16px;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 3;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  float: left;
+  background-color: transparent;
+  color: #f7ebec;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #f7ebec;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.active {
+  background-color: #264653;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+
+  body {
+    background-color: #393e41;
+  }
+
+  .about-img img {
+    box-sizing: border-box;
+    position: center;
+    height: 50%;
+    width: 50%;
+  }
+}
+/* This is All My Styling For My Blogs HTML */
+.blogs {
+  color: #f7ebec;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.button1,
+.button2 {
+  font-size: 12px;
+  text-align: center;
+  color: #393e41;
+  width: 10vw;
+  height: 10vh;
+  background-color: #f7ebec;
+  border: none;
+  padding: 5px;
+  border-radius: 30%;
+}
+
+.button1 a {
+  text-decoration: none;
+  color: #393e41;
+}
+
+/* This is the Stylesheet for Te-Houtaewa */
+.box {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+
+  .box {
+    text-align: center;
+  }
+
+  .button1,
+  .button2 {
+    font-size: 12px;
+    text-align: center;
+    color: #393e41;
+    width: 20vw;
+    height: 10vh;
+    background-color: #f7ebec;
+    border: none;
+    padding: 5px;
+    border-radius: 40%;
+  }
+}
