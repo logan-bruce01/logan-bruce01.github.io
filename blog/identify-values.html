@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/stylesheet.css" rel="stylesheet" type="text/css" />
+    <title>Identify Values</title>
+  </head>
+
+  <script>
+    function myFunction() {
+      document.getElementById('myDropdown').classList.toggle('show')
+    }
+  </script>
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a class="active" href="../index.html"
+        ><i class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="../blogs.html"><i class="fa fa-fw fa-search"></i> Blogs</a>
+    </div>
+  </div>
+
+  <body>
+    <h1>Identify Values</h1>
+    <div class="container1">
+      <p>
+        <strong
+          >Your strengths and how they will support you during your learning
+          journey.</strong
+        >
+        <br /><br />
+        My five strengths from the VIA Character test is:
+        <br />
+        <strong>1. Kindness:</strong>
+        <br />
+        I think this will really help me as I can show kindness to other people
+        when they need help with their work but also I can show kindness to
+        myself when im frustrated or annoyed about an issue or problem that I am
+        running into which will be very beneficial for my mindset going into
+        this course
+        <br /><br />
+        <strong>2. Fairness:</strong>
+        <br />
+        The way I perceive this is similar to the infamous quote of "treat other
+        people how you want to be treated", where I will treat you with fairness
+        and kindness in hopes that I will receive the same treatment back which
+        will help my learning journey because it will help me with my soft
+        skills and the core learning of this course
+        <br /><br />
+        <strong>3. Forgiveness:</strong>
+        I feel forgiveness is a key attribute for anyone to have as their is no
+        benfeits of holding grudges against poeople and showing judgement to
+        other people for mistakes they have made. I feel this will effect my
+        learning as I can show forgiveness to myself if I make mistakes and
+        continue to proceed with my learning
+        <br /><br />
+        <strong>4. Teamwork:</strong>
+        <br />
+        Teamwork is a really big attribute for me personally because I feel
+        working in a team enviroment helps create this space of zen(you could
+        call it) where everyone is collaborating with each other and it might
+        not all be smooth sailing but there will be the ups and down but it also
+        removes the pressure because you have other people to go to. For
+        example, if you are running into an issue then you can ask one of your
+        co-workers to help you with your problem. I also add an aspect of fun
+        and enjoyment because your not by yourself, because it is human nature
+        to want to be engaging with other people socially and to be around other
+        people.
+        <br /><br />
+        <strong>5. Judgement:</strong>
+        <br />
+        I think this value is key because it not judgement in the sense of why
+        did you do this but how can we fix this and improve this, which I feel
+        can bring a whole new perspective to a project and I think it will give
+        me good grasp on my learnign techniques and work ethic as I can have
+        judgement and dictate wether im doing something right or working on my
+        course enough.
+        <br /><br />
+        <strong>
+          Evaluate your limitations in terms of your learning and career
+          development. How might these affect your learning journey?</strong
+        >
+        <br />
+        I feel I can get distracted very easily and also can lose focus after a
+        period of time, this will affect my learning as it will decrease my
+        productiivity and will effect how much information I can absorb from the
+        course in a certain time period.
+        <br /><br />
+        <strong
+          >Share an example of when you were trying to work productively with
+          others, but there was resistance or tension. Discuss strategies you
+          tried at the time, how effective they were, and your reflections on
+          what other strategies you would try now and why.</strong
+        >
+        <br />
+        When I was in uni, I had a group report that had to be done and
+        obviously with it being in covid there was no way for us to meet in
+        person and discuss ideas and work on the report. Because of this it
+        created alot of tension because of the lack of communication and the
+        lack of work being produced, I tried to assign certatin topics of the
+        report to the people in the group and although the produced a small
+        amount of work it was very minimal and you could tell that not alot of
+        effort was produced obviously this created tension on my side of things
+        as I wanted to pass, this lead to me asking them to redo their parts of
+        the report which did not work. I think my strategy now would be to
+        display my work or a standard of work that was appropriate to receive
+        the grade we were after and also create a want on their side of things
+        to receive a passing grade because this would have lead to them putting
+        more effort and work.
+      </p>
+    </div>
+  </body>
+
+  <script>
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName('menu-content')
+        var i
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i]
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show')
+          }
+        }
+      }
+    }
+  </script>
+</html>

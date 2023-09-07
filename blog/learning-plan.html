@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/stylesheet.css" rel="stylesheet" type="text/css" />
+    <title>Learning Plan</title>
+  </head>
+
+  <script>
+    function myFunction() {
+      document.getElementById('myDropdown').classList.toggle('show')
+    }
+  </script>
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a class="active" href="../index.html"
+        ><i class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="../blogs.html"><i class="fa fa-fw fa-search"></i> Blogs</a>
+    </div>
+  </div>
+
+  <body>
+    <div class="container1">
+      <h1>Learning Plan</h1>
+      <br />
+      <p>
+        <strong>What is your long term goal or career pathway?</strong>
+        <br /><br />
+        If this is my longterm career, I ideally would want to have the ability
+        and the freedom to work remote whilst retatining enough income to allow
+        me to travel and live my life. I would say working remote or work for
+        myself via cliental or my own business is my end goal
+        <br /><br />
+        <strong
+          >A description of your strengths and limitations when it comes to
+          learning?</strong
+        >
+        <br /><br />
+        I feel that my personality trait for teamwork and judgement will be some
+        strengths of mine as with teamwork it gives me the ability to work with
+        others and bounce ideas and kind of hone my skills alot more in that
+        group dynamic and judgement will help self reflect on my work and will
+        allow me to kind of keep my work at the standard I want it to be but
+        also it will let me gage decisions alot better and more thought out in
+        certain situations. I would say a couple of weaknesses of mine are being
+        a bit of a perfectionist when it comes to the website design although I
+        may not be able to make extremely complex sites yet I still find myself
+        being very picky on certain things which can make me stay stuck on task
+        for a long period of time. Another weakness would be getting distracted
+        easily as this makes me alot less productive when it comes to my
+        learning
+        <br /><br />
+        <strong>
+          What skills (non-technical core/human skills) would you like to see
+          developed in yourself while at Dev Academy?</strong
+        >
+        <br /><br />
+        I would very much like to improve my social skills as I have struggled
+        alot with that in the past and although it has improved in the last year
+        or two I still would like to continously work on that and become more
+        comfortable approaching new people and making conversation. I also would
+        like to improve my confidence in general wether that is coding or social
+        skills.
+        <br /><br />
+        <strong
+          >A commitment to how you will manage your workload in this
+          programme.</strong
+        >
+        <br /><br />
+        I plan to make sure I'm managing my time alot better and interacting
+        with my classmates and facilitators when I havent made progress over a
+        long period of time and see if they can give me some ideas on how to
+        solve the issue. I also plan to allocate time to where I can decompress
+        after the day so im not just working 24/7 and getting burnt out really
+        quickly which I feel will significantly help me with my learning
+        process. I also want to keep maintaining and improving my HTML and Css
+        skills so I plan to do a short time period of work improving those
+        skills. When I am getting frustrated and annoyed with my course work I
+        will take a break and just decompress for a bit by going on a walk or
+        doing a form of exercise to help my clear my head and come back with a
+        fresh perspective
+        <br /><br />
+        <strong
+          >A commitment as to how and where you will seek help in a timely
+          way?</strong
+        >
+        <br /><br />
+        When I run to issue and situations where I cant think of a solution, I
+        will either go to my classmates or facilitators and see if anyone has
+        any new perspectives or ideas on the issue at hand otherwise I have some
+        of my mates who are studying or in the industry and I will see if I can
+        get an idea from them
+        <br /><br />
+        <strong
+          >A description of what you expect from the Facilitation team?</strong
+        >
+        <br /><br />
+        I expect that we are given the freedom to make mistakes and learn from
+        them without always needing help but I also would appreciate having that
+        kind of safety net, if I cant figure it out to have that help other than
+        that I dont really expect much else just that you facilitate to the way
+        I learn things Any scheduling information such as block-out times when
+        you are committed to other things. For example, you might have whānau
+        commitments like school drop-offs. It's important to plan these in. If
+        any important events do come up I will make sure I have plan in place to
+        complete the work and also let a facilitator know and if I cant manage
+        that I will organise time to do it once I am free and again notify a
+        facilitator
+      </p>
+    </div>
+  </body>
+
+  <script>
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName('menu-content')
+        var i
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i]
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show')
+          }
+        }
+      }
+    }
+  </script>
+</html>
