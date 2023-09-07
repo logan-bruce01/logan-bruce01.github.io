@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stories and Legends (PAGE title)</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="\\wsl.localhost\Ubuntu\home\logan\logan-bruce01.github.io\styles\stylesheet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a
+        class="active"
+        href="\\wsl.localhost\Ubuntu\home\logan\logan-bruce01.github.io\index.html"
+        ><i class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a
+        href="\\wsl.localhost\Ubuntu\home\logan\logan-bruce01.github.io\blogs.html"
+        ><i class="fa fa-fw fa-search"></i> Blogs</a
+      >
+    </div>
+  </div>
+
+  <title>What is the difference between Margin, Padding, and Border?</title>
+
+  <h1>What is the difference between Margin, Padding, and Border?</h1>
+
+  <!-- <div class="center-container"> -->
+  <div class="margin">
+    <p>
+      Margin: The basis of a Margin is to create space around the content that
+      you desirre it too, this can be extremely useful as it helps you position
+      things like nav bars and images to where you want. The margin allows us to
+      do this as it is a property that exists outside of border and padding
+      parameters which means we can use margin to create space from picture to
+      picture or anything really. This is the main difference that margin has
+      over padding and border because it allows us to manipulate the space
+      between content and the positioning.
+      <br /><br />
+      For Example:
+    </p>
+    <!-- </div> -->
+    <img
+      src="\\wsl.localhost\Ubuntu\home\logan\logan-bruce01.github.io\images\margin.PNG"
+    /><br />
+    <p>
+      As you can see the margin moves the position of the content from outside
+      the box where as padding does the opposite
+    </p>
+    <br /><br />
+  </div>
+
+  <div class="padding">
+    <p>
+      <strong>Padding:</strong>
+      The basis of padding is to align and position content inside the box, this
+      is how we identify the difference bewtween using margin and padding. Think
+      of it like this when you have a house with a fence around and you want to
+      make the fence smaller or bigger do you make changes to the fence(margin)
+      or do you make the house(padding) bigger and create space in between the
+      house and fence? that is how you should be viewing margin and padding as
+      padding makes the "house" bigger and margin changes the space of the
+      "fence".
+      <br /><br />
+      For Example:
+      <br /><br />
+    </p>
+
+    <img
+      src="\\wsl.localhost\Ubuntu\home\logan\logan-bruce01.github.io\images\padding.PNG"
+    />
+    <p>
+      As you can see with this picture example it changes the space or position
+      of the content withinside the box or border hence why the border has alot
+      of space between the picture
+    </p>
+    <br />
+    <br />
+  </div>
+
+  <div class="padding">
+    <p>
+      <strong>Border:</strong>
+      The border is essentially something used to create a box and identify the
+      contents within, It is most commonly used to create an aesthetic to a
+      website or to distinguish the content inside on a page to make it more
+      prominent
+      <br /><br />
+      For Example:
+      <br /><br />
+    </p>
+
+    <img
+      src="\\wsl.localhost\Ubuntu\home\logan\logan-bruce01.github.io\images\margin.PNG"
+    />
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById('myDropdown').classList.toggle('show')
+    }
+  </script>
+
+  <script>
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName('menu-content')
+        var i
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i]
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show')
+          }
+        }
+      }
+    }
+  </script>
+</html>

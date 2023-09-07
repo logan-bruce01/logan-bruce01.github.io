@@ -3,6 +3,7 @@ body {
   /* background-size: 100vw, 100vh; */
   background-color: #393e41;
   color: #f7ebec;
+  margin: 0px;
 }
 
 h1 {
@@ -148,13 +149,29 @@ h1 {
   border-radius: 30%;
 }
 
+.button2 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
 .button1 a {
   text-decoration: none;
   color: #393e41;
 }
 
 /* This is the Stylesheet for Te-Houtaewa */
-.box {
+/* .box {
+  text-align: center;
+} */
+
+.center-container {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  height: 20vh;
+  align-items: center;
+}
+
+.content {
+  grid-column: 2; /* content is placed in the middle column */
   text-align: center;
 }
 
@@ -180,4 +197,66 @@ h1 {
     padding: 5px;
     border-radius: 40%;
   }
+  h1 {
+    text-align: center;
+    margin: auto;
+  }
+  /* Margin-Border HTML */
+  .margin {
+    display: block;
+    /* margin-left: 20vw;
+  margin-right: 30vw; */
+    text-align: center;
+  }
+  .margin img {
+    width: 300dvw;
+  }
+  .margin p {
+    /* width: 1000px; */
+    margin: auto;
+    width: 300dvw;
+  }
+
+  .padding {
+    display: block;
+    /* margin-left: 20vw;
+  margin-right: 30vw; */
+    text-align: center;
+  }
+  .padding img {
+    width: 300dvw;
+  }
+  .padding p {
+    /* width: 1000px; */
+    margin: auto;
+    width: 300dvw;
+  }
+}
+/* Margin-Border HTML */
+.margin {
+  display: block;
+  /* margin-left: 20vw;
+  margin-right: 30vw; */
+  text-align: center;
+}
+
+.margin p {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.padding {
+  /* display: block; */
+  /* margin-left: 20vw;
+  margin-right: 30vw; */
+  text-align: center;
+}
+
+.padding img {
+  padding-left: 70px;
+}
+
+.padding p {
+  width: 1000px;
+  margin: auto;
 }
