@@ -153,11 +153,16 @@ h1 {
   font-size: 12px;
   margin-bottom: 10px;
 }
+
 .button1 a {
   text-decoration: none;
   color: #393e41;
 }
 
+.button2 a {
+  text-decoration: none;
+  color: #393e41;
+}
 /* This is the Stylesheet for Te-Houtaewa */
 /* .box {
   text-align: center;
