@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stories and Legends (PAGE title)</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <script>
+    function myFunction() {
+      document.getElementById('myDropdown').classList.toggle('show')
+    }
+  </script>
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a class="active" href="../index.html"
+        ><i class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="../blogs.html"><i class="fa fa-fw fa-search"></i> Blogs</a>
+    </div>
+  </div>
+
+  <body>
+    <div class="container1">
+      <h1>Learning Plan</h1>
+      <br />
+      <p>
+        <strong>What is Emotional Intelligence?</strong>
+        <br /><br />
+        Emotional Intelligence is essentially having a good understanding of
+        emotions that occur in the standard day to day and in high stress
+        enviroments and also identifying what those emotions are wether that be
+        anger or joy. It is being able to grasp emotions being brought up and
+        understanding how to not suppress them but manage them within reason of
+        the circumstance, For Example, If someone had made a very rude comment
+        to you about your appearance or something, having emotional Intelligence
+        is understanding that the best thing in this situation is to walk away
+        from that rather than start a fist fight. That is probably one of the
+        most simplified examples but emotional intelligence has many complex
+        layers to it for every specific situation which makes it a very complex
+        technique to navigate without practice.
+        <br /><br />
+        <strong>How is EQ different to IQ?</strong>
+        <br /><br />
+        Just like stated in the previous question EQ is defined by the way you
+        can identify your emotions and manage them in day to day situations and
+        high intensity or high stress situations and to be able to manage them
+        appropriately to the situation and to be able to manage your emotions
+        around someone elses to, For example, If someone get you this nice gift
+        for you but you in turn dont really like it or want it rather than being
+        confrontational you can choose to appreciate the thought behind the gift
+        because that what is matters like the saying "its the thought that
+        counts". Although some people will vary with the level of EQ there are
+        many ways to understand and further develop your EQ through discipline
+        and perseverance.
+        <br /><br />
+        <strong> Why is EQ important?</strong>
+        <br /><br />
+        EQ is extremely important because it shows the levels of Emotional
+        Intelligence we have which also corrulates to how we might fit better at
+        a management position or in a high stress situation or even as simply to
+        how you can discuss a extremely touchy subject with your friend like a
+        breakup because those kinds of conversations can be extremely hard to
+        navigate without upsetting the other party.
+      </p>
+    </div>
+  </body>
+
+  <script>
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName('menu-content')
+        var i
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i]
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show')
+          }
+        }
+      }
+    }
+  </script>
+</html>

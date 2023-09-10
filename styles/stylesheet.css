@@ -225,6 +225,10 @@ h1 {
     /* width: 1000px; */
     margin: auto;
     width: 300dvw;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    inline-size: 150px;
+    width: 11em;
   }
 
   .padding {
@@ -257,6 +261,8 @@ h1 {
 .margin p {
   width: 1000px;
   margin: 0 auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .padding {
