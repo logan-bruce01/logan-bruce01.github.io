@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Fundamentals</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <script>
+    function myFunction() {
+      document.getElementById('myDropdown').classList.toggle('show')
+    }
+  </script>
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a class="active" href="../index.html"
+        ><i class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="../blogs.html"><i class="fa fa-fw fa-search"></i> Blogs</a>
+    </div>
+  </div>
+
+  <title>What is the difference between Margin, Padding, and Border?</title>
+
+  <h1>What is the difference between Margin, Padding, and Border?</h1>
+
+  <!-- <div class="center-container"> -->
+  <div class="margin">
+    <p class="margin">
+      <strong
+        >An analogy to describe JavaScript and its relationship to HTML and
+        CSS?</strong
+      >
+      <br /><br />
+      DOM is very similar to a Family Tree in the sense of it has multiple parts
+      to it, For Example, you have your original ancestor which is the first
+      descendant of your family and so on. Very similarly the DOM acts like this
+      with the document tag being the original ancestor. Then you have multiple
+      siblings and Aunties & Uncles and then you have your cousins and so on.
+      Also somewhat similar is that you have your parent who is mutual relative
+      of the family tree who has access to the family this is also how DOM works
+      to by allowing communication with many different variables of the "Family
+      Tree"
+      <br /><br />
+      <strong
+        >Explain control flow and loops using an example process from everyday
+        life, for example, 'waking up' or 'brushing your teeth' (but not
+        those)?</strong
+      >
+      <br /><br />
+      Okay lets imagine this, you have a family currently and we look at your
+      day to day basis of things that we do, For Example, picking up the kids or
+      working at your 9-5 job, this is what we consider to be in a control flow
+      where there is this level of hierachy for example everyday you start your
+      day by doing a morning routine or whatever that looks like then drop the
+      kids off that is apart of the control flow because it is working through
+      the hierachy of your day to day activities and then when you go to sleep
+      and repeat the same thing the next day that is a loop and they way the
+      loop is controlled is until it is told to do something different it will
+      continously progress, For Example, for a human the loop ends when we reach
+      a certain age and unfortunately pass away that is when the loop ends for
+      us (sorry for the gloomy reference :))
+
+      <strong
+        >Describe what the DOM is and an example of how you might interact with
+        it?</strong
+      >
+      <br /><br />
+      The Document Object Model(DOM) is essentially like a family tree that has
+      multiple descendants and descendant of descendants and so on, essentially
+      the DOM allows to interact with all these different "descendants", for
+      example, when trying to acces a HTML file via a JavaScript File there is a
+      certain process you have to follow.
+      <br /><br />
+      For Example:
+    </p>
+    <!-- </div> -->
+    <img src="../images/doc-tag.PNG" /><br />
+    <p>
+      As you can see in this example we use something called a document tag that
+      allows us to use this getElementsByClassName or ID which allows us access
+      to classes and Ids from our associated HTML file, this is extremely
+      helpful because it means we can create dynamic and animated actions for
+      our website which can enhance user experience. For Example:
+    </p>
+    <br /><br />
+    <img src="../images/innerHTML.PNG" />
+    <p>
+      There is also sub functions inside the get elements tag that allows us to
+      manipulate elements inside our HTML File, lets say we created a simple P
+      tag that was empty using that innerHTML tag allows us to write stuff in
+      that tag that will display on the website once it is saved
+      <br /><br />
+      <strong
+        >Explain the difference between accessing data from arrays and
+        objects?</strong
+      >
+      <br /><br />
+      Objects and Arrays are very much similar but slightly different in ways
+      for example: A object holds a key and values. an object is often used with
+      strings because of it being able to hold limitless amount of variables and
+      it is good for holding key values like passwords and usernames
+      <br /><br />
+      Arrays allow similar attributes as a object but acts more as a list so it
+      only holds the amount of variables that is currently given and also
+      creates some difficulty when trying to count the items in an array as when
+      it is indexed or counted the starting position of the array is 0 rather
+      than 1 which often has to be accounted for in coding
+      <br /><br />
+      For an object to be accessed we first need to create an object for
+      example, if we have a object with a name variable in it for instance Logan
+      the way we acces this is we use person.name with person being the object
+      framework
+      <br /><br />
+      Where as an array is a defined variable like, lbArray = {"Logan", etc} and
+      then if you need to you call it in the HTML or use a getElement tag to
+      access in Javascript
+    </p>
+  </div>
+
+  <script>
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName('menu-content')
+        var i
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i]
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show')
+          }
+        }
+      }
+    }
+  </script>
+</html>
