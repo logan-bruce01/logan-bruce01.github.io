@@ -88,6 +88,7 @@ h1 {
   position: absolute;
   float: left;
   background-color: transparent;
+  font-family: 'Lora';
   color: #f7ebec;
   min-width: 90px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -124,11 +125,9 @@ h1 {
 
 /* This is All My Styling For My Blogs HTML */
 .blogs {
+  padding: 20px;
+  font-family: 'Lora';
   color: #f7ebec;
-  text-align: center;
-}
-
-.container {
   text-align: center;
 }
 
@@ -147,13 +146,16 @@ h1 {
 
 .button1,
 .button2 {
-  font-size: 18px;
+  font-family: 'Lora';
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .button1,
 .button2,
 a {
+  font-size: 16px;
+  font-family: 'Lora';
   text-decoration: none;
   color: #f7ebec;
 }
@@ -172,12 +174,16 @@ a {
   text-align: center;
 }
 
-/* Margin-Border HTML */
+/* Container CSS */
 .container {
   display: block;
-  /* margin-left: 20vw;
-  margin-right: 30vw; */
+  font-family: 'Lora';
+  padding: 20px;
   text-align: center;
+}
+
+.container img {
+  width: 1000px;
 }
 
 .container p {
@@ -200,6 +206,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .intro {
+    padding: 20px;
+  }
   .intro p {
     font-size: 18px;
     width: 100%;
@@ -245,6 +254,7 @@ a {
 
   /* Margin-Border HTML */
   .container {
+    padding: 20px;
     display: block;
     text-align: center;
   }
