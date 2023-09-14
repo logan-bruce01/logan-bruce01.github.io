@@ -15,28 +15,36 @@ h1 {
 .about-img img {
   box-sizing: border-box;
   position: center;
-  height: 30%;
-  width: 30%;
+  height: 25%;
+  width: 25%;
+  border-radius: 20%;
 }
 
 .intro {
   color: #f7ebec;
   text-align: center;
-  font-size: 25px;
+}
+
+.intro p {
+  font-size: 18px;
+  width: 1000px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .click-me {
-  font-size: 12px;
-  color: #393e41;
-  background-color: white;
+  font-size: 18px;
+  color: #f7ebec;
+  background-color: #393e41;
   border: none;
   padding: 5px;
   border-radius: 50%;
 }
 
 .click-me a {
-  text-decoration: none;
-  color: #393e41;
+  text-decoration: underline;
+  color: #f7ebec;
 }
 
 .bar1,
@@ -114,23 +122,6 @@ h1 {
   background-color: #000;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-
-  body {
-    background-color: #393e41;
-  }
-
-  .about-img img {
-    box-sizing: border-box;
-    position: center;
-    height: 50%;
-    width: 50%;
-  }
-}
 /* This is All My Styling For My Blogs HTML */
 .blogs {
   color: #f7ebec;
@@ -145,39 +136,35 @@ h1 {
 .button2 {
   font-size: 12px;
   text-align: center;
-  color: #393e41;
+  /* color: #f7ebec;
   width: 10vw;
-  height: 10vh;
-  background-color: #f7ebec;
+  height: 10vh; */
+  background-color: transparent;
   border: none;
   padding: 5px;
-  border-radius: 30%;
+  border-radius: 15%;
 }
 
+.button1,
 .button2 {
-  font-size: 12px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-.button1 a {
+.button1,
+.button2,
+a {
   text-decoration: none;
-  color: #393e41;
+  color: #f7ebec;
 }
 
-.button2 a {
+/* .button2 a {
   text-decoration: none;
   color: #393e41;
-}
-/* This is the Stylesheet for Te-Houtaewa */
-/* .box {
-  text-align: center;
 } */
-
-.center-container {
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
-  height: 20vh;
-  align-items: center;
+/* This is the Stylesheet for Te-Houtaewa */
+.box {
+  text-align: center;
 }
 
 .content {
@@ -185,7 +172,50 @@ h1 {
   text-align: center;
 }
 
+/* Margin-Border HTML */
+.container {
+  display: block;
+  /* margin-left: 20vw;
+  margin-right: 30vw; */
+  text-align: center;
+}
+
+.container p {
+  width: 1000px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Learning Plan CSS */
+/* .container1 p { 
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+} */
+
+.changeFont {
+  font-size: 20px;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
+  .intro p {
+    font-size: 18px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .about-img img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .dropdown-content {
+    background-color: #393e41;
+  }
   .navbar a {
     float: none;
     display: block;
@@ -199,97 +229,37 @@ h1 {
   .button2 {
     font-size: 12px;
     text-align: center;
-    color: #393e41;
-    width: 20vw;
-    height: 10vh;
-    background-color: #f7ebec;
+    background-color: transparent;
     border: none;
     padding: 5px;
-    border-radius: 40%;
+    border-radius: 15%;
   }
   h1 {
     text-align: center;
-    margin: auto;
+    width: 100%;
   }
-  /* Margin-Border HTML */
-  .margin {
-    display: block;
-    /* margin-left: 20vw;
-  margin-right: 30vw; */
-    text-align: center;
-  }
-  .margin img {
-    width: 300dvw;
-  }
-  .margin p {
-    /* width: 1000px; */
-    margin: auto;
-    width: 300dvw;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    inline-size: 150px;
-    width: 11em;
+  .changeFont {
+    font-size: 18px;
+    width: 100%;
   }
 
-  .padding {
+  /* Margin-Border HTML */
+  .container {
     display: block;
-    /* margin-left: 20vw;
-  margin-right: 30vw; */
     text-align: center;
   }
-  .padding img {
-    width: 300dvw;
+  .container img {
+    width: 100%;
   }
-  .padding p {
-    /* width: 1000px; */
-    margin: auto;
-    width: 300dvw;
+  .container p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .container1 h1 {
     margin: auto;
   }
-}
-/* Margin-Border HTML */
-.margin {
-  display: block;
-  /* margin-left: 20vw;
-  margin-right: 30vw; */
-  text-align: center;
-}
-
-.margin p {
-  width: 1000px;
-  margin: 0 auto;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-.padding {
-  /* display: block; */
-  /* margin-left: 20vw;
-  margin-right: 30vw; */
-  text-align: center;
-}
-
-.padding img {
-  padding-left: 70px;
-}
-
-.padding p {
-  width: 1000px;
-  margin: auto;
-}
-
-/* Learning Plan CSS */
-.container1 p {
-  text-align: center;
-  width: 1000px;
-  margin: auto;
-}
-
-.container1 ul {
-  text-align: center;
-  width: 1000px;
-  margin: auto;
 }
