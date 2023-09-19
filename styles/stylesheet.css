@@ -205,6 +205,18 @@ a {
   width: 100%;
 }
 
+.container li {
+  text-align: left;
+  width: 300px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.size {
+  font-size: 24px;
+}
+
 @media screen and (max-width: 768px) {
   .intro {
     padding: 20px;

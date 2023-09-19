@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Margin, Padding & Borders</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <script>
+    function myFunction() {
+      document.getElementById('myDropdown').classList.toggle('show')
+    }
+  </script>
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a class="active" href="../index.html"
+        ><i class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="../blogs.html"><i class="fa fa-fw fa-search"></i> Blogs</a>
+    </div>
+  </div>
+
+  <title>Te Whare Tapa Whā</title>
+
+  <div class="container">
+    <h1>Te Whare Tapa Whā</h1>
+    <p class="changeFont">
+      <strong class="size">Taha Tinana</strong>
+      <br />
+      Physical Wellbeing
+      <br /><br />
+      <li>Go to the gym 3-5 times a week</li>
+      <li>Go for a run 2-3 times a week</li>
+      <li>Drink 2-3L of water a day</li>
+      <li>Make sure to get a minimum of 7hrs of sleep</li>
+    </p>
+    <br /><br />
+    <p class="changeFont">
+      <strong class="size">Taha Whānau</strong>
+      <br />
+      Family Wellbeing
+      <br /><br />
+      <li>Check in on my family members every week</li>
+      <li>Create time to spend with my family once a week</li>
+      <li>Take more interest in whats going on in my siblings lives</li>
+    </p>
+    <br /><br />
+    <p class="changeFont">
+      <strong class="size">Taha Hinengaro</strong>
+      <br />
+      Emotional and Mental Wellbeing
+      <br /><br />
+      <li>Doing something I love once a day</li>
+      <li>Take time to think and meditate on things</li>
+      <li>Read a book for 10-15mins a day</li>
+      <li>Go for walk 1-2 times a day with my dog</li>
+    </p>
+    <br /><br />
+    <p class="changeFont">
+      <strong class="size">Taha Wairua</strong>
+      <br />
+      Spiritual Wellbeing
+      <br /><br />
+      <li>Meditate for 5-10 mins a day</li>
+      <li>Take time to get out into nature a few times a week</li>
+    </p>
+    <br /><br />
+    <p class="changeFont">
+      <strong class="size">Whenua</strong>
+      <br />
+      Interconnections to the land and environment
+      <br /><br />
+      <li>Once a week take time to go into nature</li>
+    </p>
+  </div>
+  <script>
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName('menu-content')
+        var i
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i]
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show')
+          }
+        }
+      }
+    }
+  </script>
+</html>
