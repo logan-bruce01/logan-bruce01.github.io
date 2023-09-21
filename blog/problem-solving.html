@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+    />
+    <title>Problem Solving</title>
+  </head>
+
+  <script>
+    function myFunction() {
+      document.getElementById('myDropdown').classList.toggle('show')
+    }
+  </script>
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a class="active" href="../index.html"
+        ><i class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="../blogs.html"><i class="fa fa-fw fa-search"></i> Blogs</a>
+    </div>
+  </div>
+
+  <body>
+    <div class="container">
+      <h1>Problem Solving</h1>
+      <br />
+      <p>
+        <strong>How were you blocked on a simple problem?</strong>
+        <br /><br />
+        I found that I struggled with the deBees exercise quite a bit as it was
+        outputting the correct result, I ended up using google and console.log()
+        to identify the problems which helped alot and then I used the console
+        to find where the error was and found that it was because of a spelling
+        mistake that caused it to not read the word buzz correctly
+        <br /><br />
+        <strong>How did you elegantly solved a problem?</strong>
+        <br /><br />
+        I found I ran into an issue trying to hold the data for the students and
+        scores in the gradebook test because intially I was trying to add a new
+        object type for every student and then trying to grab the scores for
+        each student which did not work. I then realised I could manipulate a
+        for loop that grabbed each students individual grades and stored them
+        <br /><br />
+        <strong>
+          Reflect on how confident you feel using each of these problem-solving
+          techniques/processes?</strong
+        >
+        <br /><br />
+        I feel rather confident using most of these techniques as I am very
+        comfortable with the likes of using console.log() to identify wether a
+        program is outputting result and to find errors in the code however I
+        found myself not using much psuedocode which definetely would have made
+        writing code alot clearer so next time I will take the time to implement
+        it
+        <br /><br />
+        <strong
+          >Reflect on a time you were reluctant to ask for help. Consider what
+          made you reluctant to do so. What might you try differently next
+          time?</strong
+        >
+        <br /><br />
+        I ran into an issue of not being able to run my program through the
+        terminal and I was pretty reluctant to ask for help as I found myself
+        sort of be littling myself for such a easy thing to do and I suppose I
+        felt embarrassed about it. Next time I will try a couple more solutions
+        and if they dont work I will ask for help from my peers and teachers
+        <br /><br />
+      </p>
+    </div>
+  </body>
+
+  <script>
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName('menu-content')
+        var i
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i]
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show')
+          }
+        }
+      }
+    }
+  </script>
+</html>
