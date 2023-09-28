@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Foundations Reflection</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <script>
+    function myFunction() {
+      document.getElementById('myDropdown').classList.toggle('show')
+    }
+  </script>
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a class="active" href="../index.html"
+        ><i class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="../blogs.html"><i class="fa fa-fw fa-search"></i> Blogs</a>
+    </div>
+  </div>
+
+  <body>
+    <div class="container" id="reflect">
+      <h1>Foundations Reflection</h1>
+      <br />
+      <p>
+        <strong
+          >What are three new things you have learnt about yourself and your ego
+          due to the core learning?</strong
+        >
+        <br /><br />
+        I was definetely suprised at how much I expected myself to know and how
+        fragile my ego was if I didnt know, I found myself stressing and making
+        things worse by being negative if I didnt know things at the start but I
+        have slowly learned to give myself a bit of credit for what I do know
+        <br /><br />
+        I was also really suprised at how I managed the problem solving as when
+        I was at uni I would have little meltdowns because I couldnt solve
+        something but during this process I found myself pushing through and
+        understanding that I am still learning and its about the journey not the
+        destination
+        <br /><br />
+        I also found implementing a Growth Mindset outlook has helped not only
+        in study but all areas of my life im starting to look at things as
+        opportunities and rather looking at downfalls as a bad thing I now look
+        at it as a lesson that i needed to learn
+        <br /><br />
+        <strong
+          >What are the role of values, empathy, and self-awareness in learning
+          and programming?</strong
+        >
+        <br /><br />
+        From my perspective, I would say values define the interactions between
+        you and your team and this can significcantly impact a groups dynamic in
+        a positive or negative way. So knowing what values you bring to the team
+        and knowing how to manage your less forth-coming characteristics is a
+        must as it can allow a better dynamic for yourself and the group.
+        Empathy plays a really big part in learning and programming as we are
+        all human and we do make mistakes and tend to be rather negative about
+        those mistakes, being able to have empathy towards yourself in times of
+        stress or confusion or anger can hugely impact the dynamics of your
+        learning as it allows you to not be so negative and push through and to
+        recognise the amazing work you have already done. Another extremely
+        important ingredient to the recipe is self-awareness as being self aware
+        can help you recognise emotions that may effect your mood or outlook on
+        the work you are currently doing. For example, when i run into an issue
+        with my programming and start to get frustrated I can recognise and be
+        able to take a break so I can relax for a second, being able to do this
+        is so important to the learning process as it helps you not be negative
+        and also helps you with getting burnt out less as well
+        <br /><br />
+        <strong
+          >What has surprised you the most about the core learning?</strong
+        >
+        <br /><br />
+        Honestly the growth Mindset suprised me the most, I had read about it
+        but never properly introduced into my life and now having done that I
+        notice that my perception of challenges and failures can be taken as a
+        learning curve or a lesson to be known for the next time I go into a
+        situation like that.
+        <br /><br />
+        <strong
+          >What were the most challenging aspects of the core learning?</strong
+        >
+        <br /><br />
+        I would say looking at my traits and seeing a couple of maybe not the
+        best traits but I also have started to understand we are all human and
+        everyone has flaws somewhere or a rather and thats what sets us a part
+        and defines who we are
+        <br /><br />
+        <strong
+          >Why do you think we, a programming school, are spending so much time
+          focusing on core learning in a web development Bootcamp
+          course?</strong
+        >
+        <br /><br />
+        I think unlike alot Universities, Dev Academy understand that people
+        skills are just as important as our coding skills because any company
+        wanting to hire someone will think it is pointless if the person cant
+        even properly interact and get along with people let alone a group of
+        people whom you will be spending alot of time with.
+        <br /><br />
+      </p>
+    </div>
+  </body>
+
+  <script>
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName('menu-content')
+        var i
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i]
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show')
+          }
+        }
+      }
+    }
+  </script>
+</html>
